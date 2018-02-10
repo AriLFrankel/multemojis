@@ -1,14 +1,15 @@
 {
-  "name": "emojis",
+  "name": "multemojis",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool for creating emojis from images",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "multemojis": "bin/cli.js"
   },
-  "author": "",
+  "author": "Ari Frankel <ari.l.frankel@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "command-line-args": "^5.0.2",
     "jimp": "^0.2.28"
   }
 }

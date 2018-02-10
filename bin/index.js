@@ -8,13 +8,14 @@ const readImage = path => jimp.read(path);
 /* scale the image in the specified fashion to the specified number of tiles
   img, str, int, int -> promise
 */
-const resizeImage = (img, width, height, method = 'contain') =>
+const resizeImage = (img, width, height, method) =>
   img
     .clone()
     [method](
       (128 * width) || jimp.AUTO,
       (128 * height) || jimp.AUTO
     )
+    
 
 /* create emoji size slices 
   img, out-path -> promise
@@ -45,11 +46,11 @@ const sliceImage = (img, path) => {
   }));
 }
 
+const parseError = 
+
 module.exports = function(path, options){
-  const { width, height, out = path } = options;
+  const { width = 1, height = 1, method = 'contain', out = path } = options;
   return readImage(path)
-    .then(img => resizeImage(img, width, height))
-    .then(resized => sliceImage(resized, out))
-    .then(console.log)
-    .catch(console.error)
+    .then(img => resizeImage(img, width, height, method))
+    .then(resized => sliceImage(resized, out));
 }
