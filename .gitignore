@@ -1,0 +1,8 @@
+*.jpeg
+bowie.jpg bowie0.jpg bowie1.jpg
+*.jpg
+*.jpeg
+*.png
+*.gif
+node_modules
+.DS_Store
