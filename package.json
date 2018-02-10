@@ -6,6 +6,10 @@
   "bin": {
     "multemojis": "bin/cli.js"
   },
+  "keywords": [
+    "slack",
+    "emoji"
+  ],
   "author": "Ari Frankel <ari.l.frankel@gmail.com>",
   "license": "ISC",
   "dependencies": {

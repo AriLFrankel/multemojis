@@ -1,8 +1,8 @@
-*.jpeg
-bowie.jpg bowie0.jpg bowie1.jpg
-*.jpg
+node_modules
+.DS_Store
+pacakage-lock.json
+dist
 *.jpeg
 *.png
 *.gif
-node_modules
-.DS_Store
+yarn-error.log

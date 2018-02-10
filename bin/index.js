@@ -46,8 +46,6 @@ const sliceImage = (img, path) => {
   }));
 }
 
-const parseError = 
-
 module.exports = function(path, options){
   const { width = 1, height = 1, method = 'contain', out = path } = options;
   return readImage(path)
