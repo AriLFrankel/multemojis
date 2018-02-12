@@ -2,7 +2,4 @@ node_modules
 .DS_Store
 pacakage-lock.json
 dist
-*.jpeg
-*.png
-*.gif
 yarn-error.log
