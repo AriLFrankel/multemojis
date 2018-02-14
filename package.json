@@ -48,6 +48,7 @@
   ],
   "dependencies": {
     "command-line-args": "^5.0.2",
+    "command-line-usage": "^4.1.0",
     "jimp": "^0.2.28"
   },
   "devDependencies": {
