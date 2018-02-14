@@ -52,7 +52,7 @@ module.exports = async function createTilesFromImage(path, options) {
     throw new Error('bad image path error:', err);
   }
   const { width = 1, height = 1, method = 'scaleToFit' } = options;
-  const out = options.out.replace(/\.[jpe?g|png|bmp]+/, '');
+  const out = (options.out || path).replace(/\.[jpe?g|png|bmp]+/, '');
   return writeImages(
     getSlices(resizeImage(img, width, height, method)),
     out,
