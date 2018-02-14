@@ -27,7 +27,7 @@ Option | Definition | Default
 height / -h |  how many emoji tiles high  | 1
 width / -w |  how many emoji tiles wide  | 1
 out / -o |  where to output emojis  | `<PATH_TO_IMAGES OR URL>`
-| method / -m | how to scale images | [jimp](https://www.npmjs.com/package/jimp) `contain`
+| method / -m | how to scale images | [jimp](https://www.npmjs.com/package/jimp) `scaleToFit`
 
 ### Example
 
@@ -50,4 +50,4 @@ See [Slack docs](https://get.slack.help/hc/en-us/articles/206870177-Create-custo
 
 Please feel free to open an [issue](https://github.com/AriLFrankel/multemojis/issues) for any contribution ideas
 
-#### Built with [jimp](https://www.npmjs.com/package/jimp) and [command-line-args](https://www.npmjs.com/package/command-line-args) :pray:
+#### Built with [jimp](https://www.npmjs.com/package/jimp), [command-line-args](https://www.npmjs.com/package/command-line-args) and [command-line-usage](https://www.npmjs.com/package/command-line-usage) :pray:
