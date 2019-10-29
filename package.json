@@ -50,7 +50,8 @@
     "command-line-args": "^5.0.2",
     "command-line-usage": "^4.1.0",
     "jimp": "^0.8.5",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "tar": "^5.0.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
